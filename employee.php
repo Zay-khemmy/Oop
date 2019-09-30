@@ -5,7 +5,7 @@
         // public $lastname;
         // public $age;
         // public $date_of_birth;
-        public $address;
+        // public $address;
 
         public function firstname(){
             
@@ -19,6 +19,9 @@
         public function date_of_birth(){
             
         }
+        public function firstname_lastname(){
+            echo "$this->firstname $this->lastname</br>";
+        }
         public function address(){
         
         }
@@ -29,10 +32,11 @@
 
     class Employee_department extends Employee
     {
-        public $department;
-        public $designation;
-        public $employee_name;
-        public $employee_age;
+        // public $department;
+        // public $designation;
+        // public $employee_name;
+        // public $employee_age;
+        
         public function department(){
 
         }
@@ -50,10 +54,11 @@
 
 // $employee = new Employee;
 $department = new Employee_department;
-$department->lastname =" Bello";
 $department->firstname = "Zainab";
+$department->lastname =" Bello";
 $department->date_of_birth =" 10/01/1990";
 $department->age = 20;
+$department->firstname_lastname();
 $department->employee_profile();
 $department->employee_name();
 $department->employee_age();
