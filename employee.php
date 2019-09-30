@@ -1,12 +1,18 @@
 <?php
     class Employee
     {
-        // public $firstname;
-        // public $lastname;
-        // public $age;
-        // public $date_of_birth;
-        // public $address;
+        public $firstname;
+        public $lastname;
+        public $age;
+        public $date_of_birth;
+        public $address;
 
+        public function getfirstname(){
+            echo $this->firstname;
+        }
+        public function getlastname(){
+            echo $this->lastname;
+        }
         public function firstname(){
             
         }
@@ -44,7 +50,7 @@
             
         }
         public function employee_name(){
-            echo "$this->firstname exists in this record";
+            echo "$this->firstname";
             
         }
         public function employee_age(){
@@ -62,4 +68,6 @@ $department->firstname_lastname();
 $department->employee_profile();
 $department->employee_name();
 $department->employee_age();
+$department->getfirstname();
+$department->getlastname();
 ?>
