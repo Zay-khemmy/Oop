@@ -3,16 +3,11 @@
     {
         public $firstname;
         public $lastname;
-        public $age;
-        public $date_of_birth;
-        public $address;
+        public $phone_number;
+        public $department;
+        // public $date_of_birth;
+        // public $address;
 
-        public function getfirstname(){
-            echo $this->firstname;
-        }
-        public function getlastname(){
-            echo $this->lastname;
-        }
         public function firstname(){
             
         }
@@ -34,6 +29,24 @@
         public function employee_profile(){
             echo "My name is  $this->firstname $this->lastname I was born on $this->date_of_birth and I am $this->age  years old</br>";
         }
+        public function getfirstname(){
+            echo $this->firstname. "</br>";
+        }
+        public function getlastname(){
+            echo $this->lastname. "</br>";
+        }
+        public function setphone_number($phone_number){
+            echo $this->phone_number = $phone_number. "</br>";
+        }
+        public function setdepartment($department){
+            echo $this->department = $department. "</br>";
+        }
+        public function setfirstname($firstname){
+            echo $this->firstname = $firstname. "</br>";
+        }
+        public function setlastname($lastname){
+            echo $this->lastname = $lastname. "</br>";
+        }
     }
 
     class Employee_department extends Employee
@@ -54,7 +67,7 @@
             
         }
         public function employee_age(){
-            echo ' I am ' . $this->age;
+            echo ' I am ' . $this->age."</br>";
         }
     } 
 
@@ -70,4 +83,8 @@ $department->employee_name();
 $department->employee_age();
 $department->getfirstname();
 $department->getlastname();
+$department->setphone_number("08106177610");
+$department->setdepartment("Technology");
+$department->setfirstname("Tola");
+$department->setlastname("Adekunle");
 ?>
