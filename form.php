@@ -7,7 +7,7 @@
     <title>Employee Form</title>
 </head>
 <body>
-    <form action="employee_data.php" method="POST">
+    <form action="data.php" method="POST">
     Employee Name:
         <input type="text" name="employee_name"><br>
     Home Address:
@@ -25,7 +25,8 @@
         <input type="text" name="phone_number"><br>
     Age:
         <input type="text" name="age"><br>
-        <input type="submit" name="save" value="Submit">
+        <input type="submit" name="save" value="Submit"><br><br>
     </form>
+
 </body>
 </html>
