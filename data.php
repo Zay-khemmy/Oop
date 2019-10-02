@@ -42,7 +42,7 @@
             // output data of each row
             while($row = $result->fetch_assoc()) {
                 echo "<tr>
-                    <th scope='row'>Donuts</th>
+                    <th scope='row'>1</th>
                     <td> ". $row["employee_name"]." </td>
                     <td> ". $row["home_address"]."</td>
                     <td> <center>". $row["state_origin"]."</center></td>
