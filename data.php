@@ -38,17 +38,19 @@
             // echo "Connected successfully";
         $sql = "SELECT id, employee_name, home_address, state_origin, phone_number, age FROM employees";
         $result = $conn->query($sql);
+        $serial_number = 1;
         if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
                 echo "<tr>
-                    <th scope='row'>1</th>
+                    <th> ". $serial_number." </th>
                     <td> ". $row["employee_name"]." </td>
                     <td> ". $row["home_address"]."</td>
                     <td> <center>". $row["state_origin"]."</center></td>
                     <td> ".  $row["phone_number"]."</td>
                     <td> ". $row["age"]. "</td>
                 </tr>";
+                $serial_number++;
             }
         }
     ?>
